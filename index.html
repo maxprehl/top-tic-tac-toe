@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOP - Tic Tac Toe</title>
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/style.css" />
     <script src="src/game.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>The Odin Project - Tic Tac Toe</h1>
-    <form action="#" method="post" onsubmit="GameController.initializeGame()" class="new-game-form" >
-        <div class="name-input-container">
-            <input type="text" placeholder="Player 1..." class="name-input" id="player-1">
-            <input type="text" placeholder="Player 2..." class="name-input" id="player-2">
-        </div>
-        <input type="submit" value="Start New Game">
-    </form> 
+    <!-- <form action="#" method="post" onsubmit="GameController.initializeGame()" class="new-game-form" > -->
+    <form action="cgi-bin/hello" method="post" class="new-game-form">
+      <div class="name-input-container">
+        <input
+          type="text"
+          placeholder="Player 1..."
+          class="name-input"
+          id="player_1"
+          name="player_1"
+        />
+        <input
+          type="text"
+          placeholder="Player 2..."
+          class="name-input"
+          id="player_2"
+          name="player_2"
+        />
+      </div>
+      <input type="submit" value="Start New Game" />
+    </form>
     <div class="board-container">
-        <div class="ttt-cell" id="1"></div>
-        <div class="ttt-cell" id="2"></div>
-        <div class="ttt-cell" id="3"></div>
-        <div class="ttt-cell" id="4"></div>
-        <div class="ttt-cell" id="5"></div>
-        <div class="ttt-cell" id="6"></div>
-        <div class="ttt-cell" id="7"></div>
-        <div class="ttt-cell" id="8"></div>
-        <div class="ttt-cell" id="9"></div>
+      <div class="ttt-cell" id="1"></div>
+      <div class="ttt-cell" id="2"></div>
+      <div class="ttt-cell" id="3"></div>
+      <div class="ttt-cell" id="4"></div>
+      <div class="ttt-cell" id="5"></div>
+      <div class="ttt-cell" id="6"></div>
+      <div class="ttt-cell" id="7"></div>
+      <div class="ttt-cell" id="8"></div>
+      <div class="ttt-cell" id="9"></div>
     </div>
-</body>
+  </body>
 </html>
